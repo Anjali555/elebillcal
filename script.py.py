@@ -7,7 +7,7 @@ This is a temporary script file.
 
 import pandas as pd
 import datetime 
-df = pd.DataFrame(pd.read_csv(r"C:\Users\Robodia\Desktop\Sorted Connection Histories/ConnectionList150.csv"))
+df = pd.DataFrame(pd.read_csv(r"C:\Users\Robodia\Desktop\Sorted Connection Histories/ConnectionList.csv"))
 df['NewDate'] = [i.split(' ')[0] for i in df['Date in meter']]
 def data(Meter_id):
     a = df.loc[df['Meter'] == Meter_id]
